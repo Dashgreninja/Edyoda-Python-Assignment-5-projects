@@ -18,7 +18,7 @@ class Calculator:
 
 # input code to test  
 obj = Calculator(10,94)
-print(obj.add())
-print(obj.subtract())
-print(obj.multiply())
-print(obj.divide())
+print(f'sum of numbers : {obj.add()}')
+print(f'difference of numbers : {obj.subtract()}')
+print(f'multiplication of numbers : {obj.multiply()}')
+print(f'division of numbers : {obj.divide()}')
