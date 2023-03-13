@@ -14,4 +14,4 @@ class Point:
     
 # input code to test
 sample = Point(1,3,5)
-print(sample.sqSum())
+print(f'Sum of Squares of numbers : {sample.sqSum()}')
