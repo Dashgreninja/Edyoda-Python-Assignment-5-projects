@@ -13,7 +13,7 @@ class Account:
         self.balance = self.balance + amount
 
     def getBalance(self):
-        return f'Account Balance : {self.balance}'
+        print(f'Account Balance : {self.balance}')
 
 
 class SavingsAccount(Account):
@@ -22,7 +22,7 @@ class SavingsAccount(Account):
         self.interestRate = interestRate
 
     def interestAmount(self):
-        return f'Interest Amount : {(self.balance) * self.interestRate / 100}'
+        print(f'Interest Amount : {(self.balance) * self.interestRate / 100}')
 
 
 #code to test - do not edit this
@@ -32,5 +32,5 @@ demo1 = SavingsAccount("Ashish", 2000, 5)   # initializing a SavingsAccount obje
 # printing code to test
 demo1.deposit(500)
 demo1.withdrawal(700)
-print(demo1.interestAmount())
-print(demo1.getBalance())
+demo1.interestAmount()
+demo1.getBalance()
